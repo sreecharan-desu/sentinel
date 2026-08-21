@@ -73,6 +73,17 @@ body {
   html,
   body {
     overflow: hidden;
+    height: 100dvh;
+  }
+}
+
+@media (max-width: 1023px) {
+  html,
+  body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    min-height: 100dvh;
+    height: auto;
   }
 }
 

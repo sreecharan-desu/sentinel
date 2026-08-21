@@ -42,6 +42,8 @@ export default function HomePage() {
   const [view, setView] = useState<"readable" | "json">("readable");
   const [playing, setPlaying] = useState(false);
   const [theme, setTheme] = useState<ThemeMode>("dark");
+  const [detailsOpen, setDetailsOpen] = useState(false);
+
   useEffect(() => {
     const stored = (localStorage.getItem("theme") as ThemeMode | null) ?? "dark";
     setTheme(stored);
@@ -126,16 +128,16 @@ export default function HomePage() {
   };
 
   return (
-    <div className="flex h-screen flex-col overflow-hidden">
-      <header className="flex h-14 shrink-0 items-center justify-between border-b border-border px-5">
-        <div className="flex items-center gap-3">
-          <span className="size-2 rounded-full bg-accent" />
+    <div className="flex min-h-dvh flex-col lg:h-dvh lg:overflow-hidden">
+      <header className="sticky top-0 z-20 flex h-12 shrink-0 items-center justify-between border-b border-border bg-background/90 px-4 backdrop-blur sm:h-14 sm:px-5">
+        <div className="flex min-w-0 items-center gap-2 sm:gap-3">
+          <span className="size-2 shrink-0 rounded-full bg-accent" />
           <span className="text-sm font-medium text-primary">Sentinel</span>
-          <span className="hidden text-xs text-secondary sm:inline">
+          <span className="hidden truncate text-xs text-secondary md:inline">
             Scrapers that fix themselves and keep the same Collector ID
           </span>
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex shrink-0 items-center gap-1.5 sm:gap-2">
           <button
             type="button"
             onClick={toggleTheme}
@@ -148,15 +150,66 @@ export default function HomePage() {
             href="https://github.com/sreecharan-desu/sentinel"
             target="_blank"
             rel="noreferrer"
-            className="inline-flex h-8 items-center rounded-full px-3.5 text-xs font-medium text-primary shadow-[inset_0_0_0_1px_hsl(var(--border))] transition-colors duration-150 hover:bg-primary/[0.05]"
+            className="inline-flex h-8 items-center rounded-full px-3 text-xs font-medium text-primary shadow-[inset_0_0_0_1px_hsl(var(--border))] transition-colors duration-150 hover:bg-primary/[0.05] sm:px-3.5"
           >
             GitHub
           </a>
         </div>
       </header>
 
-      <main className="grid min-h-0 flex-1 grid-cols-1 lg:grid-cols-[230px_minmax(0,1fr)_320px]">
-        <aside className="scroll-area flex min-h-0 flex-col border-b border-border lg:border-b-0 lg:border-r">
+      {/* Mobile / tablet: horizontal sources */}
+      <div className="shrink-0 border-b border-border lg:hidden">
+        <div className="flex items-center justify-between gap-3 px-4 pt-3">
+          <p className="text-xs text-secondary">Sources</p>
+          <p className="font-mono text-[11px] text-secondary">
+            {state?.snapshots.length ?? 0} runs · {state?.heals.length ?? 0} heals
+          </p>
+        </div>
+        <div className="flex gap-2 overflow-x-auto px-4 py-3 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+          {collectors.map((c) => {
+            const active = c.id === selected;
+            return (
+              <button
+                key={c.id}
+                type="button"
+                onClick={() => {
+                  setSelected(c.id);
+                  setPlaying(false);
+                  setDetailsOpen(false);
+                }}
+                className={`shrink-0 rounded-full px-3.5 py-2 text-left transition-colors duration-150 ${
+                  active
+                    ? "bg-primary text-background"
+                    : "bg-card text-primary shadow-[inset_0_0_0_1px_hsl(var(--border))]"
+                }`}
+              >
+                <span className="block whitespace-nowrap text-xs font-medium">
+                  {c.name}
+                </span>
+                <span
+                  className={`mt-0.5 flex items-center gap-1 text-[10px] ${
+                    active ? "text-background/70" : "text-secondary"
+                  }`}
+                >
+                  <span className={active ? "text-background" : statusTone[c.status]}>
+                    ●
+                  </span>
+                  {statusLabel[c.status] ?? c.status}
+                </span>
+              </button>
+            );
+          })}
+        </div>
+        <p className="border-t border-border px-4 py-2.5 text-[11px] leading-relaxed text-secondary">
+          <span className="text-primary">Sources are added from the terminal, not here.</span>{" "}
+          Read-only on purpose —{" "}
+          <code className="font-mono text-primary/70">sentinel:create</code> then push.
+        </p>
+      </div>
+
+      <main className="grid min-h-0 flex-1 grid-cols-1 lg:grid-cols-[230px_minmax(0,1fr)_300px] xl:grid-cols-[248px_minmax(0,1fr)_320px]">
+        {/* Desktop sources rail */}
+        <aside className="scroll-area hidden min-h-0 flex-col border-r border-border lg:flex">
           <p className="px-5 pb-2 pt-4 text-xs text-secondary">Sources</p>
           <div className="flex-1 px-3 pb-4">
             {collectors.map((c) => {
@@ -206,10 +259,10 @@ export default function HomePage() {
           </div>
         </aside>
 
-        <section className="flex min-h-0 flex-col">
-          <div className="flex flex-wrap items-start justify-between gap-3 border-b border-border px-6 py-4">
-            <div className="min-w-0">
-              <h1 className="font-display text-xl font-medium tracking-tight text-primary">
+        <section className="flex min-h-0 flex-col lg:min-h-0">
+          <div className="flex flex-wrap items-start justify-between gap-3 border-b border-border px-4 py-3 sm:px-6 sm:py-4">
+            <div className="min-w-0 flex-1">
+              <h1 className="font-display text-lg font-medium tracking-tight text-primary sm:text-xl">
                 {collector?.name ?? "Select a source"}
               </h1>
               {collector && (
@@ -217,27 +270,47 @@ export default function HomePage() {
                   href={collector.url}
                   target="_blank"
                   rel="noreferrer"
-                  className="mt-1 block truncate text-xs text-secondary transition-colors duration-150 hover:text-primary"
+                  className="mt-1 block truncate text-[11px] text-secondary transition-colors duration-150 hover:text-primary sm:text-xs"
                 >
                   {collector.url}
                 </a>
               )}
             </div>
-            {steps.length > 1 && (
+            <div className="flex shrink-0 items-center gap-2">
               <button
                 type="button"
-                onClick={replay}
-                className="inline-flex h-8 shrink-0 items-center gap-2 rounded-full bg-accent px-4 text-xs font-medium text-background transition-opacity duration-150 hover:opacity-90"
+                onClick={() => setDetailsOpen((o) => !o)}
+                className="inline-flex h-8 items-center rounded-full px-3 text-xs font-medium text-secondary shadow-[inset_0_0_0_1px_hsl(var(--border))] lg:hidden"
               >
-                {playing ? "Playing…" : "Replay the loop"}
+                {detailsOpen ? "Hide details" : "Details"}
               </button>
-            )}
+              {steps.length > 1 && (
+                <button
+                  type="button"
+                  onClick={replay}
+                  className="inline-flex h-8 shrink-0 items-center gap-2 rounded-full bg-accent px-3.5 text-xs font-medium text-background transition-opacity duration-150 hover:opacity-90 sm:px-4"
+                >
+                  {playing ? "Playing…" : "Replay the loop"}
+                </button>
+              )}
+            </div>
           </div>
 
+          {/* Mobile details drawer */}
+          {detailsOpen && (
+            <div className="border-b border-border lg:hidden">
+              <DetailsPanel collector={collector} selected={selected} />
+            </div>
+          )}
+
           {error ? (
-            <p className="px-6 py-5 text-sm text-[hsl(var(--error))]">{error}</p>
+            <p className="px-4 py-5 text-sm text-[hsl(var(--error))] sm:px-6">
+              {error}
+            </p>
           ) : steps.length === 0 ? (
-            <p className="px-6 py-5 text-sm text-secondary">No runs recorded yet.</p>
+            <p className="px-4 py-5 text-sm text-secondary sm:px-6">
+              No runs recorded yet.
+            </p>
           ) : (
             <>
               <Timeline
@@ -249,7 +322,7 @@ export default function HomePage() {
                   setStepIndex(i);
                 }}
               />
-              <div className="scroll-area min-h-0 flex-1 px-6 py-5">
+              <div className="scroll-area min-h-0 flex-1 px-4 py-4 sm:px-6 sm:py-5">
                 {step?.kind === "heal" ? (
                   <HealStep event={step.heal} />
                 ) : step ? (
@@ -266,63 +339,73 @@ export default function HomePage() {
           )}
         </section>
 
-        <aside className="scroll-area flex min-h-0 flex-col border-t border-border lg:border-l lg:border-t-0">
-          <div className="border-b border-border px-5 py-4">
-            <p className="text-xs text-secondary">Collector</p>
-            {collector ? (
-              <dl className="mt-2.5 space-y-3">
-                <Field label="Fields expected">{collector.fields.join(", ")}</Field>
-                <Field label="Created">{formatWhen(collector.createdAt)}</Field>
-                <Field label="Last run">{formatWhen(collector.lastRunAt)}</Field>
-              </dl>
-            ) : (
-              <p className="mt-2.5 text-sm text-secondary">—</p>
-            )}
-          </div>
-
-          {collector?.collectorId && (
-            <div className="border-b border-border px-5 py-4">
-              <div className="flex items-center justify-between gap-2">
-                <p className="text-xs text-secondary">
-                  The same ID at every step above
-                </p>
-                <CopyButton value={collector.collectorId} />
-              </div>
-              <p className="mt-2 rounded-lg border border-accent/30 bg-accent/[0.06] px-3 py-2.5 font-mono text-xs break-all text-primary">
-                {collector.collectorId}
-              </p>
-              <p className="mt-2 text-xs leading-relaxed text-secondary">
-                Healing edits the collector in place. If it minted a new ID, every
-                schedule and app calling it would break.
-              </p>
-            </div>
-          )}
-
-          {collector?.notes && (
-            <div className="border-b border-border px-5 py-4">
-              <p className="text-xs text-secondary">Why this source is here</p>
-              <p className="mt-2 text-sm leading-relaxed text-primary/85">
-                {collector.notes}
-              </p>
-            </div>
-          )}
-
-          <div className="px-5 py-4">
-            <div className="flex items-center justify-between gap-2">
-              <p className="text-xs text-secondary">Reproduce it</p>
-              <CopyButton value={`npm run sentinel:watch -- ${selected}`} />
-            </div>
-            <pre className="mt-2 whitespace-pre-wrap break-all rounded-lg border border-border bg-codeblock p-3 font-mono text-[11px] leading-relaxed text-primary/80">
-              {`npm run sentinel:watch -- ${selected}`}
-            </pre>
-            <p className="mt-2 text-xs leading-relaxed text-secondary">
-              Runs the same loop against a live Bright Data account and overwrites the
-              snapshots above.
-            </p>
-          </div>
+        <aside className="scroll-area hidden min-h-0 flex-col border-l border-border lg:flex">
+          <DetailsPanel collector={collector} selected={selected} />
         </aside>
       </main>
     </div>
+  );
+}
+
+function DetailsPanel({
+  collector,
+  selected,
+}: {
+  collector?: CollectorDef;
+  selected: string;
+}) {
+  return (
+    <>
+      <div className="border-b border-border px-4 py-4 sm:px-5">
+        <p className="text-xs text-secondary">Collector</p>
+        {collector ? (
+          <dl className="mt-2.5 space-y-3">
+            <Field label="Fields expected">{collector.fields.join(", ")}</Field>
+            <Field label="Created">{formatWhen(collector.createdAt)}</Field>
+            <Field label="Last run">{formatWhen(collector.lastRunAt)}</Field>
+          </dl>
+        ) : (
+          <p className="mt-2.5 text-sm text-secondary">—</p>
+        )}
+      </div>
+
+      {collector?.collectorId && (
+        <div className="border-b border-border px-4 py-4 sm:px-5">
+          <div className="flex items-center justify-between gap-2">
+            <p className="text-xs text-secondary">The same ID at every step above</p>
+            <CopyButton value={collector.collectorId} />
+          </div>
+          <p className="mt-2 break-all rounded-lg border border-accent/30 bg-accent/[0.06] px-3 py-2.5 font-mono text-xs text-primary">
+            {collector.collectorId}
+          </p>
+          <p className="mt-2 text-xs leading-relaxed text-secondary">
+            Healing edits the collector in place. If it minted a new ID, every
+            schedule and app calling it would break.
+          </p>
+        </div>
+      )}
+
+      {collector?.notes && (
+        <div className="border-b border-border px-4 py-4 sm:px-5">
+          <p className="text-xs text-secondary">Why this source is here</p>
+          <p className="mt-2 text-sm leading-relaxed text-primary/85">{collector.notes}</p>
+        </div>
+      )}
+
+      <div className="px-4 py-4 sm:px-5">
+        <div className="flex items-center justify-between gap-2">
+          <p className="text-xs text-secondary">Reproduce it</p>
+          <CopyButton value={`npm run sentinel:watch -- ${selected}`} />
+        </div>
+        <pre className="mt-2 whitespace-pre-wrap break-all rounded-lg border border-border bg-codeblock p-3 font-mono text-[11px] leading-relaxed text-primary/80">
+          {`npm run sentinel:watch -- ${selected}`}
+        </pre>
+        <p className="mt-2 text-xs leading-relaxed text-secondary">
+          Runs the same loop against a live Bright Data account and overwrites the
+          snapshots above.
+        </p>
+      </div>
+    </>
   );
 }
 
@@ -338,7 +421,7 @@ function Timeline({
   onPick: (i: number) => void;
 }) {
   return (
-    <div className="flex items-center gap-1 overflow-x-auto border-b border-border px-6 py-3">
+    <div className="flex items-center gap-1 overflow-x-auto border-b border-border px-4 py-3 sm:px-6">
       {steps.map((s, i) => {
         const active = i === index;
         const tone = stepTone(s, expected);
@@ -492,7 +575,7 @@ function RunStep({
                     i > 0 ? "border-t border-border" : ""
                   } ${empty ? "bg-[hsl(var(--warning))]/[0.05]" : ""}`}
                 >
-                  <span className="w-28 shrink-0 font-mono text-xs text-secondary">
+                  <span className="w-20 shrink-0 font-mono text-[11px] text-secondary sm:w-28 sm:text-xs">
                     {field}
                   </span>
                   <span
