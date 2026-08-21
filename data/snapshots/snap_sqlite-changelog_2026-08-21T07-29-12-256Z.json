@@ -1,0 +1,312 @@
+{
+  "id": "snap_sqlite-changelog_2026-08-21T07-29-12-256Z",
+  "collectorKey": "sqlite-changelog",
+  "collectorId": "c_mt2mhq4v6qfm4c54e",
+  "url": "https://www.sqlite.org/changes.html",
+  "fetchedAt": "2026-08-21T07:29:12.256Z",
+  "rowCount": 50,
+  "rows": [
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.53.4",
+      "release_date": "2026-07-24"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.53.3",
+      "release_date": "2026-06-26"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.53.2",
+      "release_date": "2026-06-03"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.53.1",
+      "release_date": "2026-05-05"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.53.0",
+      "release_date": "2026-04-09"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.51.3",
+      "release_date": "2026-03-13"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.52.0",
+      "release_date": "2026-03-06"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.51.2",
+      "release_date": "2026-01-09"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.51.1",
+      "release_date": "2025-11-28"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.51.0",
+      "release_date": "2025-11-04"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.50.4",
+      "release_date": "2025-07-30"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.50.3",
+      "release_date": "2025-07-17"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.50.2",
+      "release_date": "2025-06-28"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.50.1",
+      "release_date": "2025-06-06"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.50.0",
+      "release_date": "2025-05-29"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.49.2",
+      "release_date": "2025-05-07"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.49.1",
+      "release_date": "2025-02-18"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.49.0",
+      "release_date": "2025-02-06"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.48.0",
+      "release_date": "2025-01-14"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.47.2",
+      "release_date": "2024-12-07"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.47.1",
+      "release_date": "2024-11-25"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.47.0",
+      "release_date": "2024-10-21"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.46.1",
+      "release_date": "2024-08-13"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.46.0",
+      "release_date": "2024-05-23"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.45.3",
+      "release_date": "2024-04-15"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.45.2",
+      "release_date": "2024-03-12"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.45.1",
+      "release_date": "2024-01-30"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.45.0",
+      "release_date": "2024-01-15"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.44.2",
+      "release_date": "2023-11-24"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.44.1",
+      "release_date": "2023-11-22"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.44.0",
+      "release_date": "2023-11-01"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.43.2",
+      "release_date": "2023-10-10"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.43.1",
+      "release_date": "2023-09-11"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.43.0",
+      "release_date": "2023-08-24"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.42.0",
+      "release_date": "2023-05-16"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.41.2",
+      "release_date": "2023-03-22"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.41.1",
+      "release_date": "2023-03-10"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.41.0",
+      "release_date": "2023-02-21"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.40.1",
+      "release_date": "2022-12-28"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.40.0",
+      "release_date": "2022-11-16"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.39.4",
+      "release_date": "2022-09-29"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.39.3",
+      "release_date": "2022-09-05"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.39.2",
+      "release_date": "2022-07-21"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.39.1",
+      "release_date": "2022-07-13"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.39.0",
+      "release_date": "2022-06-25"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.38.5",
+      "release_date": "2022-05-06"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.38.4",
+      "release_date": "2022-05-04"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.38.3",
+      "release_date": "2022-04-27"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.38.2",
+      "release_date": "2022-03-26"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.38.1",
+      "release_date": "2022-03-12"
+    }
+  ],
+  "ok": true,
+  "issues": []
+}

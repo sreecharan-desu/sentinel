@@ -1,0 +1,72 @@
+[
+  {
+    "id": "shopalto-pdp",
+    "name": "ShopAlto product page",
+    "url": "https://shopalto.xyz/product/aurora-wireless-headphones",
+    "description": "Pull product name and price from this public page.",
+    "fields": [
+      "name",
+      "price",
+      "description",
+      "image_url",
+      "rating"
+    ],
+    "status": "healthy",
+    "notes": "Main demo. Started with name and price, then healed to add the rest.",
+    "collectorId": "c_mt2j5vpf2fdmbvf2n4",
+    "createdAt": "2026-08-21T05:50:59.702Z",
+    "lastRunAt": "2026-08-21T05:53:38.485Z",
+    "lastHealAt": "2026-08-21T05:53:26.871Z"
+  },
+  {
+    "id": "shopalto-drift",
+    "name": "ShopAlto earbuds",
+    "url": "https://shopalto.xyz/product/mute-pro-earbuds",
+    "description": "Pull the product name, price, and rating from this public product page.",
+    "fields": [
+      "name",
+      "price",
+      "rating",
+      "description",
+      "image_url"
+    ],
+    "status": "healthy",
+    "notes": "Unattended demo. Two expected fields come back null, so watch detects, heals, and re-runs on its own.",
+    "collectorId": "c_mt2khmw11zhlcl023j",
+    "createdAt": "2026-08-21T06:28:08.495Z",
+    "lastRunAt": "2026-08-21T06:34:01.049Z",
+    "lastHealAt": "2026-08-21T06:33:55.579Z"
+  },
+  {
+    "id": "falkordb-docs",
+    "name": "FalkorDB docs",
+    "url": "https://docs.falkordb.com/",
+    "description": "Pull section titles, short blurbs, and links from the docs home page.",
+    "fields": [
+      "title",
+      "description",
+      "url"
+    ],
+    "status": "healthy",
+    "notes": "Second source. Public docs page, not a Bright Data library scraper.",
+    "collectorId": "c_mt2jadm52izcmg18nb",
+    "createdAt": "2026-08-21T05:53:47.117Z",
+    "lastRunAt": "2026-08-21T06:05:44.347Z"
+  },
+  {
+    "id": "sqlite-changelog",
+    "name": "SQLite changelog",
+    "url": "https://www.sqlite.org/changes.html",
+    "description": "Pull each release version and its release date from this public changelog page.",
+    "fields": [
+      "version",
+      "release_date"
+    ],
+    "rowsFrom": "releases",
+    "status": "healthy",
+    "notes": "Third shape. The page comes back as one row wrapping a list of releases, so the pipeline expands it into a row per release.",
+    "collectorId": "c_mt2mhq4v6qfm4c54e",
+    "createdAt": "2026-08-21T07:25:29.105Z",
+    "lastRunAt": "2026-08-21T07:29:12.256Z"
+  }
+]

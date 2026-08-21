@@ -1,0 +1,41 @@
+[
+  {
+    "id": "heal_shopalto-drift_2026-08-21T06-33-55-579Z",
+    "collectorKey": "shopalto-drift",
+    "collectorId": "c_mt2khmw11zhlcl023j",
+    "promptedAt": "2026-08-21T06:33:55.579Z",
+    "prompt": "These fields return null/empty after a page change: description, image_url. Re-capture them from the current markup while keeping existing fields (name, price, rating, description, image_url) and the same Collector ID.",
+    "status": "done",
+    "previewRows": [
+      {
+        "collector_id": "c_mt2khmw11zhlcl023j",
+        "status": "done",
+        "completed_steps": [
+          "planner",
+          "control_preview_runner",
+          "code_fixer",
+          "step_preview_runner",
+          "request_fulfillment_validator",
+          "step_advance",
+          "user_approval",
+          "save_new_template"
+        ],
+        "prompt": "These fields return null/empty after a page change: description, image_url. Re-capture them from the current markup while keeping existing fields (name, price, rating, description, image_url) and the same Collector ID.",
+        "view_url": "https://brightdata.com/cp/scrapers/c_mt2khmw11zhlcl023j",
+        "next_step": "bdata scraper run c_mt2khmw11zhlcl023j https://shopalto.xyz/product/mute-pro-earbuds"
+      }
+    ],
+    "note": "heal command finished",
+    "trigger": "detected"
+  },
+  {
+    "id": "heal_shopalto-pdp_2026-08-21T05-53-26-864Z",
+    "collectorKey": "shopalto-pdp",
+    "collectorId": "c_mt2j5vpf2fdmbvf2n4",
+    "promptedAt": "2026-08-21T05:53:26.871Z",
+    "prompt": "Also grab description, image, and rating. Keep name and price. Do not change the Collector ID.",
+    "status": "done",
+    "note": "Picked up the new fields. Collector ID stayed the same.",
+    "trigger": "manual"
+  }
+]

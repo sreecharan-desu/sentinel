@@ -1,0 +1,40 @@
+{
+  "collectorId": "c_mt2mhq4v6qfm4c54e",
+  "url": "https://www.sqlite.org/changes.html",
+  "fetchedAt": "2026-08-21T07:29:12.256Z",
+  "ok": true,
+  "issues": [],
+  "rowCount": 50,
+  "rows": [
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.53.4",
+      "release_date": "2026-07-24"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.53.3",
+      "release_date": "2026-06-26"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.53.2",
+      "release_date": "2026-06-03"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.53.1",
+      "release_date": "2026-05-05"
+    },
+    {
+      "product_page_url": "https://www.sqlite.org/changes.html",
+      "url": "https://www.sqlite.org/changes.html",
+      "version": "3.53.0",
+      "release_date": "2026-04-09"
+    }
+  ]
+}

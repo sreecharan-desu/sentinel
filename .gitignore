@@ -1,0 +1,23 @@
+node_modules/
+.next/
+.env
+.env.local
+.env*.local
+.DS_Store
+*.log
+.cursor/*
+!.cursor/rules/
+.vercel/
+tsconfig.tsbuildinfo
+
+# Raw CLI dumps stay local; curated snapshots ship for the demo UI
+data/runs/*
+!data/runs/.gitkeep
+
+# Local notes (not published)
+.local/
+.vercel
+.env*
+
+# Local verification artifacts
+tmp/

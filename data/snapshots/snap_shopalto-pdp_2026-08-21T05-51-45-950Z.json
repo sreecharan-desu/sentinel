@@ -1,0 +1,25 @@
+{
+  "id": "snap_shopalto-pdp_2026-08-21T05-51-45-950Z",
+  "collectorKey": "shopalto-pdp",
+  "collectorId": "c_mt2j5vpf2fdmbvf2n4",
+  "url": "https://shopalto.xyz/product/aurora-wireless-headphones",
+  "fetchedAt": "2026-08-21T05:51:45.950Z",
+  "rowCount": 1,
+  "rows": [
+    {
+      "product_name": "Aurora  Wireless  Headphones Headphones Wireless Aurora",
+      "price": {
+        "value": 214.77,
+        "currency": "USD",
+        "symbol": "$"
+      },
+      "input": {
+        "url": "https://shopalto.xyz/product/aurora-wireless-headphones"
+      },
+      "name": "Aurora  Wireless  Headphones Headphones Wireless Aurora",
+      "price_display": "$214.77 USD"
+    }
+  ],
+  "ok": true,
+  "issues": []
+}

@@ -1,0 +1,30 @@
+name: Sentinel watch
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - run: npm ci
+      - name: Run self-healing watch
+        env:
+          BRIGHTDATA_API_KEY: ${{ secrets.BRIGHTDATA_API_KEY }}
+        run: npm run sentinel:watch -- shopalto-pdp
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: sentinel-data
+          path: |
+            data/snapshots
+            data/runs
+            data/heals.json
+            data/collectors.json

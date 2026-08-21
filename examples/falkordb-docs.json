@@ -1,0 +1,127 @@
+{
+  "collectorId": "c_mt2jadm52izcmg18nb",
+  "url": "https://docs.falkordb.com/",
+  "fetchedAt": "2026-08-21T06:05:44.347Z",
+  "ok": true,
+  "issues": [],
+  "rowCount": 12,
+  "rows": [
+    {
+      "section_title": "\u200b Topics in This Section",
+      "section_links": [
+        {
+          "link_text": "REST API",
+          "link_url": "https://docs.falkordb.com/integration/rest"
+        },
+        {
+          "link_text": "Kafka Connect",
+          "link_url": "https://docs.falkordb.com/integration/kafka-connect"
+        },
+        {
+          "link_text": "Apache Jena",
+          "link_url": "https://docs.falkordb.com/integration/jena"
+        },
+        {
+          "link_text": "BOLT protocol support",
+          "link_url": "https://docs.falkordb.com/integration/bolt-support"
+        },
+        {
+          "link_text": "Spring Data FalkorDB",
+          "link_url": "https://docs.falkordb.com/integration/spring-data-falkordb"
+        },
+        {
+          "link_text": "Snowflake Integration",
+          "link_url": "https://docs.falkordb.com/integration/snowflake"
+        },
+        {
+          "link_text": "n8n GraphRAG Nodes",
+          "link_url": "https://docs.falkordb.com/integration/n8n"
+        },
+        {
+          "link_text": "PyTorch Geometric",
+          "link_url": "https://docs.falkordb.com/integration/pyg"
+        },
+        {
+          "link_text": "Bulk Loader",
+          "link_url": "https://docs.falkordb.com/integration/bulk-loader"
+        }
+      ],
+      "product_page_url": "https://docs.falkordb.com/integration",
+      "input": {
+        "url": "https://docs.falkordb.com/"
+      },
+      "title": "\u200b Topics in This Section",
+      "url": "https://docs.falkordb.com/integration/rest"
+    },
+    {
+      "section_title": "\u200b Frequently Asked Questions",
+      "product_page_url": "https://docs.falkordb.com/integration",
+      "input": {
+        "url": "https://docs.falkordb.com/"
+      },
+      "title": "\u200b Frequently Asked Questions",
+      "url": "https://docs.falkordb.com/integration"
+    },
+    {
+      "section_title": "\u200b Official Object-Graph Mapping (OGM) Libraries",
+      "section_description": "FalkorDB provides official Object-Graph Mapping (OGM) libraries that allow you to work with graph data using native language objects and structures.",
+      "section_links": [
+        {
+          "link_text": "falkordb-py-orm",
+          "link_url": "https://github.com/FalkorDB/falkordb-py-orm"
+        },
+        {
+          "link_text": "readme",
+          "link_url": "https://github.com/FalkorDB/falkordb-py-orm#readme"
+        },
+        {
+          "link_text": "FalkorDB",
+          "link_url": "https://www.falkordb.com/"
+        },
+        {
+          "link_text": "GitHub",
+          "link_url": "https://github.com/FalkorDB/falkordb-py-orm"
+        },
+        {
+          "link_text": "falkordb-go-orm",
+          "link_url": "https://github.com/FalkorDB/falkordb-go-orm"
+        },
+        {
+          "link_text": "readme",
+          "link_url": "https://github.com/FalkorDB/falkordb-go-orm#readme"
+        },
+        {
+          "link_text": "FalkorDB",
+          "link_url": "https://www.falkordb.com/"
+        },
+        {
+          "link_text": "GitHub",
+          "link_url": "https://github.com/FalkorDB/falkordb-go-orm"
+        },
+        {
+          "link_text": "spring-data-falkordb",
+          "link_url": "https://github.com/FalkorDB/spring-data-falkordb"
+        },
+        {
+          "link_text": "readme",
+          "link_url": "https://github.com/FalkorDB/spring-data-falkordb#readme"
+        },
+        {
+          "link_text": "FalkorDB",
+          "link_url": "https://www.falkordb.com/"
+        },
+        {
+          "link_text": "GitHub",
+          "link_url": "https://github.com/FalkorDB/spring-data-falkordb"
+        }
+      ],
+      "product_page_url": "https://docs.falkordb.com/getting-started/clients",
+      "input": {
+        "url": "https://docs.falkordb.com/"
+      },
+      "title": "\u200b Official Object-Graph Mapping (OGM) Libraries",
+      "description": "FalkorDB provides official Object-Graph Mapping (OGM) libraries that allow you to work with graph data using native language objects and structures.",
+      "url": "https://github.com/FalkorDB/falkordb-py-orm"
+    }
+  ]
+}

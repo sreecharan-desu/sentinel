@@ -1,0 +1,464 @@
+{
+  "id": "snap_falkordb-docs_2026-08-21T06-05-44-347Z",
+  "collectorKey": "falkordb-docs",
+  "collectorId": "c_mt2jadm52izcmg18nb",
+  "url": "https://docs.falkordb.com/",
+  "fetchedAt": "2026-08-21T06:05:44.347Z",
+  "rowCount": 12,
+  "rows": [
+    {
+      "section_title": "\u200b Topics in This Section",
+      "section_links": [
+        {
+          "link_text": "REST API",
+          "link_url": "https://docs.falkordb.com/integration/rest"
+        },
+        {
+          "link_text": "Kafka Connect",
+          "link_url": "https://docs.falkordb.com/integration/kafka-connect"
+        },
+        {
+          "link_text": "Apache Jena",
+          "link_url": "https://docs.falkordb.com/integration/jena"
+        },
+        {
+          "link_text": "BOLT protocol support",
+          "link_url": "https://docs.falkordb.com/integration/bolt-support"
+        },
+        {
+          "link_text": "Spring Data FalkorDB",
+          "link_url": "https://docs.falkordb.com/integration/spring-data-falkordb"
+        },
+        {
+          "link_text": "Snowflake Integration",
+          "link_url": "https://docs.falkordb.com/integration/snowflake"
+        },
+        {
+          "link_text": "n8n GraphRAG Nodes",
+          "link_url": "https://docs.falkordb.com/integration/n8n"
+        },
+        {
+          "link_text": "PyTorch Geometric",
+          "link_url": "https://docs.falkordb.com/integration/pyg"
+        },
+        {
+          "link_text": "Bulk Loader",
+          "link_url": "https://docs.falkordb.com/integration/bulk-loader"
+        }
+      ],
+      "product_page_url": "https://docs.falkordb.com/integration",
+      "input": {
+        "url": "https://docs.falkordb.com/"
+      },
+      "title": "\u200b Topics in This Section",
+      "url": "https://docs.falkordb.com/integration/rest"
+    },
+    {
+      "section_title": "\u200b Frequently Asked Questions",
+      "product_page_url": "https://docs.falkordb.com/integration",
+      "input": {
+        "url": "https://docs.falkordb.com/"
+      },
+      "title": "\u200b Frequently Asked Questions",
+      "url": "https://docs.falkordb.com/integration"
+    },
+    {
+      "section_title": "\u200b Official Object-Graph Mapping (OGM) Libraries",
+      "section_description": "FalkorDB provides official Object-Graph Mapping (OGM) libraries that allow you to work with graph data using native language objects and structures.",
+      "section_links": [
+        {
+          "link_text": "falkordb-py-orm",
+          "link_url": "https://github.com/FalkorDB/falkordb-py-orm"
+        },
+        {
+          "link_text": "readme",
+          "link_url": "https://github.com/FalkorDB/falkordb-py-orm#readme"
+        },
+        {
+          "link_text": "FalkorDB",
+          "link_url": "https://www.falkordb.com/"
+        },
+        {
+          "link_text": "GitHub",
+          "link_url": "https://github.com/FalkorDB/falkordb-py-orm"
+        },
+        {
+          "link_text": "falkordb-go-orm",
+          "link_url": "https://github.com/FalkorDB/falkordb-go-orm"
+        },
+        {
+          "link_text": "readme",
+          "link_url": "https://github.com/FalkorDB/falkordb-go-orm#readme"
+        },
+        {
+          "link_text": "FalkorDB",
+          "link_url": "https://www.falkordb.com/"
+        },
+        {
+          "link_text": "GitHub",
+          "link_url": "https://github.com/FalkorDB/falkordb-go-orm"
+        },
+        {
+          "link_text": "spring-data-falkordb",
+          "link_url": "https://github.com/FalkorDB/spring-data-falkordb"
+        },
+        {
+          "link_text": "readme",
+          "link_url": "https://github.com/FalkorDB/spring-data-falkordb#readme"
+        },
+        {
+          "link_text": "FalkorDB",
+          "link_url": "https://www.falkordb.com/"
+        },
+        {
+          "link_text": "GitHub",
+          "link_url": "https://github.com/FalkorDB/spring-data-falkordb"
+        }
+      ],
+      "product_page_url": "https://docs.falkordb.com/getting-started/clients",
+      "input": {
+        "url": "https://docs.falkordb.com/"
+      },
+      "title": "\u200b Official Object-Graph Mapping (OGM) Libraries",
+      "description": "FalkorDB provides official Object-Graph Mapping (OGM) libraries that allow you to work with graph data using native language objects and structures.",
+      "url": "https://github.com/FalkorDB/falkordb-py-orm"
+    },
+    {
+      "section_title": "\u200b Additional Clients",
+      "section_description": "Note: Some clients below were originally developed for RedisGraph. While many may work with FalkorDB due to protocol compatibility, they are not officially tested or supported. For best results, use the official FalkorDB clients listed above.",
+      "section_links": [
+        {
+          "link_text": "nredisstack",
+          "link_url": "https://github.com/redis/nredisstack"
+        },
+        {
+          "link_text": "Redis",
+          "link_url": "https://redis.com/"
+        },
+        {
+          "link_text": "nuget",
+          "link_url": "https://www.nuget.org/packages/nredisstack/"
+        },
+        {
+          "link_text": "falkordb_ex",
+          "link_url": "https://github.com/georgfaust/falkordb_ex"
+        },
+        {
+          "link_text": "Sebastian",
+          "link_url": "https://github.com/georgfaust"
+        },
+        {
+          "link_text": "GitHub",
+          "link_url": "https://github.com/georgfaust/falkordb_ex"
+        },
+        {
+          "link_text": "redisgraph-rb",
+          "link_url": "https://github.com/RedisGraph/redisgraph-rb"
+        },
+        {
+          "link_text": "Redis",
+          "link_url": "https://redislabs.com/"
+        },
+        {
+          "link_text": "GitHub",
+          "link_url": "https://github.com/RedisGraph/redisgraph-rb"
+        },
+        {
+          "link_text": "redgraph",
+          "link_url": "https://github.com/pzac/redgraph"
+        },
+        {
+          "link_text": "pzac",
+          "link_url": "https://github.com/pzac"
+        },
+        {
+          "link_text": "GitHub",
+          "link_url": "https://github.com/pzac/redgraph"
+        },
+        {
+          "link_text": "redisgraph-go",
+          "link_url": "https://github.com/RedisGraph/redisgraph-go"
+        },
+        {
+          "link_text": "Redis",
+          "link_url": "https://redislabs.com/"
+        },
+        {
+          "link_text": "GitHub",
+          "link_url": "https://github.com/RedisGraph/redisgraph-go"
+        },
+        {
+          "link_text": "rueidis",
+          "link_url": "https://github.com/rueian/rueidis"
+        },
+        {
+          "link_text": "Rueian",
+          "link_url": "https://github.com/rueian"
+        },
+        {
+          "link_text": "GitHub",
+          "link_url": "https://github.com/rueian/rueidis"
+        },
+        {
+          "link_text": "ioredisgraph",
+          "link_url": "https://github.com/Jonahss/ioredisgraph"
+        },
+        {
+          "link_text": "Jonah",
+          "link_url": "https://github.com/Jonahss"
+        },
+        {
+          "link_text": "GitHub",
+          "link_url": "https://github.com/Jonahss/ioredisgraph"
+        },
+        {
+          "link_text": "@hydre/rgraph",
+          "link_url": "https://github.com/HydreIO/rgraph"
+        },
+        {
+          "link_text": "Sceat",
+          "link_url": "https://github.com/Sceat"
+        },
+        {
+          "link_text": "GitHub",
+          "link_url": "https://github.com/HydreIO/rgraph"
+        },
+        {
+          "link_text": "drivine",
+          "link_url": "https://github.com/liberation-data/drivine"
+        },
+        {
+          "link_text": "liberation-data",
+          "link_url": "https://github.com/liberation-data"
+        },
+        {
+          "link_text": "npm",
+          "link_url": "https://www.npmjs.com/package/@liberation-data/drivine"
+        },
+        {
+          "link_text": "php-redis-graph",
+          "link_url": "https://github.com/kjdev/php-redis-graph"
+        },
+        {
+          "link_text": "KJDev",
+          "link_url": "https://github.com/kjdev"
+        },
+        {
+          "link_text": "GitHub",
+          "link_url": "https://github.com/kjdev/php-redis-graph"
+        },
+        {
+          "link_text": "redisgraph_php",
+          "link_url": "https://github.com/jpbourbon/redisgraph_php"
+        },
+        {
+          "link_text": "jpbourbon",
+          "link_url": "https://github.com/jpbourbon"
+        },
+        {
+          "link_text": "GitHub",
+          "link_url": "https://github.com/jpbourbon/redisgraph_php"
+        },
+        {
+          "link_text": "redisgraph-ex",
+          "link_url": "https://github.com/crflynn/redisgraph-ex"
+        },
+        {
+          "link_text": "crflynn",
+          "link_url": "https://github.com/crflynn"
+        },
+        {
+          "link_text": "GitHub",
+          "link_url": "https://github.com/crflynn/redisgraph-ex"
+        },
+        {
+          "link_text": "redisgraph-rs",
+          "link_url": "https://github.com/malte-v/redisgraph-rs"
+        },
+        {
+          "link_text": "malte-v",
+          "link_url": "https://github.com/malte-v"
+        },
+        {
+          "link_text": "GitHub",
+          "link_url": "https://github.com/malte-v/redisgraph-rs"
+        },
+        {
+          "link_text": "redis_graph",
+          "link_url": "https://github.com/tompro/redis_graph"
+        },
+        {
+          "link_text": "tompro",
+          "link_url": "https://github.com/tompro"
+        },
+        {
+          "link_text": "GitHub",
+          "link_url": "https://github.com/tompro/redis_graph"
+        },
+        {
+          "link_text": "rustis",
+          "link_url": "https://github.com/dahomey-technologies/rustis"
+        },
+        {
+          "link_text": "Dahomey Technologies",
+          "link_url": "https://github.com/dahomey-technologies"
+        },
+        {
+          "link_text": "Crate",
+          "link_url": "https://crates.io/crates/rustis"
+        },
+        {
+          "link_text": "NRedisGraph",
+          "link_url": "https://github.com/tombatron/NRedisGraph"
+        },
+        {
+          "link_text": "tombatron",
+          "link_url": "https://github.com/tombatron"
+        },
+        {
+          "link_text": "GitHub",
+          "link_url": "https://github.com/tombatron/NRedisGraph"
+        },
+        {
+          "link_text": "RedisGraph.jl",
+          "link_url": "https://github.com/xyxel/RedisGraph.jl"
+        },
+        {
+          "link_text": "xyxel",
+          "link_url": "https://github.com/xyxel"
+        },
+        {
+          "link_text": "GitHub",
+          "link_url": "https://github.com/xyxel/RedisGraph.jl"
+        }
+      ],
+      "product_page_url": "https://docs.falkordb.com/getting-started/clients",
+      "input": {
+        "url": "https://docs.falkordb.com/"
+      },
+      "title": "\u200b Additional Clients",
+      "description": "Note: Some clients below were originally developed for RedisGraph. While many may work with FalkorDB due to protocol compatibility, they are not officially tested or supported. For best results, use the official FalkorDB clients listed above.",
+      "url": "https://github.com/redis/nredisstack"
+    },
+    {
+      "section_title": "\u200b Implementing a client",
+      "section_description": "Information on some of the tasks involved in writing a FalkorDB client can be found in the Client Specification .",
+      "section_links": [
+        {
+          "link_text": "Client Specification",
+          "link_url": "https://docs.falkordb.com/design/client-spec"
+        }
+      ],
+      "product_page_url": "https://docs.falkordb.com/getting-started/clients",
+      "input": {
+        "url": "https://docs.falkordb.com/"
+      },
+      "title": "\u200b Implementing a client",
+      "description": "Information on some of the tasks involved in writing a FalkorDB client can be found in the Client Specification .",
+      "url": "https://docs.falkordb.com/design/client-spec"
+    },
+    {
+      "section_title": "\u200b Frequently Asked Questions",
+      "section_links": [
+        {
+          "link_text": "configuration parameter",
+          "link_url": "https://docs.falkordb.com/getting-started/configuration#bolt_port"
+        },
+        {
+          "link_text": "Pydoc",
+          "link_url": "https://falkordb-py.readthedocs.io/"
+        },
+        {
+          "link_text": "JSDoc",
+          "link_url": "https://www.npmjs.com/package/falkordb"
+        },
+        {
+          "link_text": "Javadocs",
+          "link_url": "https://www.javadoc.io/doc/com.falkordb/jfalkordb"
+        },
+        {
+          "link_text": "docs.rs",
+          "link_url": "https://docs.rs/falkordb"
+        },
+        {
+          "link_text": "GoDoc",
+          "link_url": "https://pkg.go.dev/github.com/FalkorDB/falkordb-go"
+        }
+      ],
+      "product_page_url": "https://docs.falkordb.com/getting-started/clients",
+      "input": {
+        "url": "https://docs.falkordb.com/"
+      },
+      "title": "\u200b Frequently Asked Questions",
+      "url": "https://docs.falkordb.com/getting-started/configuration#bolt_port"
+    },
+    {
+      "section_title": "\u200b Requirements",
+      "section_links": [
+        {
+          "link_text": "Get Started",
+          "link_url": "https://docs.falkordb.com/getting-started"
+        }
+      ],
+      "product_page_url": "https://docs.falkordb.com/integration/bulk-loader",
+      "input": {
+        "url": "https://docs.falkordb.com/"
+      },
+      "title": "\u200b Requirements",
+      "url": "https://docs.falkordb.com/getting-started"
+    },
+    {
+      "section_title": "\u200b Installation",
+      "product_page_url": "https://docs.falkordb.com/integration/bulk-loader",
+      "input": {
+        "url": "https://docs.falkordb.com/"
+      },
+      "title": "\u200b Installation",
+      "url": "https://docs.falkordb.com/integration/bulk-loader"
+    },
+    {
+      "section_title": "\u200b Quick Start",
+      "section_description": "Given two CSV files \u2014 Person.csv (nodes) and KNOWS.csv (relationships) \u2014 import them into a graph named SocialGraph :",
+      "product_page_url": "https://docs.falkordb.com/integration/bulk-loader",
+      "input": {
+        "url": "https://docs.falkordb.com/"
+      },
+      "title": "\u200b Quick Start",
+      "description": "Given two CSV files \u2014 Person.csv (nodes) and KNOWS.csv (relationships) \u2014 import them into a graph named SocialGraph :",
+      "url": "https://docs.falkordb.com/integration/bulk-loader"
+    },
+    {
+      "section_title": "\u200b Connecting to FalkorDB",
+      "section_description": "By default the loader connects to redis://127.0.0.1:6379 . Use --server-url to point it at a different instance:",
+      "product_page_url": "https://docs.falkordb.com/integration/bulk-loader",
+      "input": {
+        "url": "https://docs.falkordb.com/"
+      },
+      "title": "\u200b Connecting to FalkorDB",
+      "description": "By default the loader connects to redis://127.0.0.1:6379 . Use --server-url to point it at a different instance:",
+      "url": "https://docs.falkordb.com/integration/bulk-loader"
+    },
+    {
+      "section_title": "\u200b Key Options",
+      "product_page_url": "https://docs.falkordb.com/integration/bulk-loader",
+      "input": {
+        "url": "https://docs.falkordb.com/"
+      },
+      "title": "\u200b Key Options",
+      "url": "https://docs.falkordb.com/integration/bulk-loader"
+    },
+    {
+      "section_title": "\u200b Enforcing a Schema",
+      "section_description": "By default the loader infers each property\u2019s type. Use --enforce-schema ( -d ) when you want explicit control. Column headers must follow the name:TYPE format:",
+      "product_page_url": "https://docs.falkordb.com/integration/bulk-loader",
+      "input": {
+        "url": "https://docs.falkordb.com/"
+      },
+      "title": "\u200b Enforcing a Schema",
+      "description": "By default the loader infers each property\u2019s type. Use --enforce-schema ( -d ) when you want explicit control. Column headers must follow the name:TYPE format:",
+      "url": "https://docs.falkordb.com/integration/bulk-loader"
+    }
+  ],
+  "ok": true,
+  "issues": []
+}

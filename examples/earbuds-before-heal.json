@@ -1,0 +1,26 @@
+{
+  "collectorId": "c_mt2khmw11zhlcl023j",
+  "url": "https://shopalto.xyz/product/mute-pro-earbuds",
+  "fetchedAt": "2026-08-21T06:32:26.349Z",
+  "ok": false,
+  "issues": [
+    "field_null:description",
+    "field_null:image_url"
+  ],
+  "rows": [
+    {
+      "product_name": "Mute Pro Earbuds",
+      "price": {
+        "value": 176.06,
+        "currency": "USD",
+        "symbol": "$"
+      },
+      "rating": 4.9,
+      "input": {
+        "url": "https://shopalto.xyz/product/mute-pro-earbuds"
+      },
+      "name": "Mute Pro Earbuds",
+      "price_display": "$176.06 USD"
+    }
+  ]
+}

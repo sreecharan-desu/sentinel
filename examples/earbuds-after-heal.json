@@ -1,0 +1,25 @@
+{
+  "collectorId": "c_mt2khmw11zhlcl023j",
+  "url": "https://shopalto.xyz/product/mute-pro-earbuds",
+  "fetchedAt": "2026-08-21T06:34:01.049Z",
+  "ok": true,
+  "issues": [],
+  "rows": [
+    {
+      "product_name": "Mute Pro Earbuds",
+      "price": {
+        "value": 176.06,
+        "currency": "USD",
+        "symbol": "$"
+      },
+      "rating": 4.9,
+      "description": "Noise-canceling earbuds with adaptive ANC, a transparent mode that feels natural on calls, and six hours of playback per charge. The case is the size of a matchbox.\\",
+      "image_url": "https://loremflickr.com/800/800/earbuds,wireless?lock=0071&v=136",
+      "input": {
+        "url": "https://shopalto.xyz/product/mute-pro-earbuds"
+      },
+      "name": "Mute Pro Earbuds",
+      "price_display": "$176.06 USD"
+    }
+  ]
+}

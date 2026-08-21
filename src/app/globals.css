@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+  --font-display: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+
+  --color-background: hsl(var(--background));
+  --color-surface: hsl(var(--surface));
+  --color-foreground: hsl(var(--foreground));
+  --color-primary: hsl(var(--primary));
+  --color-secondary: hsl(var(--secondary));
+  --color-accent: hsl(var(--accent));
+  --color-card: hsl(var(--card));
+  --color-border: hsl(var(--border));
+  --color-codeblock: hsl(var(--codeblock));
+  --color-success: hsl(var(--success));
+  --color-error: hsl(var(--error));
+  --color-warning: hsl(var(--warning));
+}
+
+/* :root matches <html> with the same specificity as .dark, so the light block
+   has to come first — otherwise it wins the tie and dark never applies. */
+:root,
+.light {
+  --background: 40 20% 98%;
+  --surface: 0 0% 100%;
+  --foreground: 220 14% 12%;
+  --primary: 220 16% 10%;
+  --secondary: 220 8% 45%;
+  --accent: 162 68% 30%;
+  --card: 0 0% 100%;
+  --border: 40 12% 88%;
+  --codeblock: 40 16% 96%;
+  --success: 162 68% 30%;
+  --error: 0 72% 48%;
+  --warning: 32 84% 40%;
+  --header-bg: hsl(40 20% 98% / 0.88);
+}
+
+.dark {
+  --background: 220 14% 6%;
+  --surface: 220 12% 9%;
+  --foreground: 220 14% 90%;
+  --primary: 0 0% 100%;
+  --secondary: 220 9% 58%;
+  --accent: 162 58% 52%;
+  --card: 220 12% 10%;
+  --border: 220 10% 18%;
+  --codeblock: 220 14% 8%;
+  --success: 162 58% 52%;
+  --error: 0 72% 66%;
+  --warning: 38 92% 62%;
+  --header-bg: hsl(220 14% 6% / 0.88);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (min-width: 1024px) {
+  html,
+  body {
+    overflow: hidden;
+  }
+}
+
+::selection {
+  background: hsl(var(--accent) / 0.22);
+}
+
+.scroll-area {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: hsl(var(--border)) transparent;
+}
+
+.scroll-area::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scroll-area::-webkit-scrollbar-thumb {
+  background: hsl(var(--border));
+  border-radius: 999px;
+}
+
+.scroll-area::-webkit-scrollbar-track {
+  background: transparent;
+}

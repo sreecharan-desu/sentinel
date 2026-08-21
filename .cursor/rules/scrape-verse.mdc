@@ -1,0 +1,33 @@
+# Bright Data Scraper Studio — Scrape-Verse
+
+Always run the Bright Data CLI through:
+`npx -p @brightdata/cli bdata ...`
+
+Never create a new scraper when a Collector ID already exists in
+`data/collectors.json`. Reuse `bdata scraper run <collector_id>`, and repair
+breakage with `bdata scraper heal <collector_id>` so the `c_*` stays the same.
+A new ID would break every schedule and app already calling the old one.
+
+Pinned collectors:
+
+- `shopalto-pdp` — `c_mt2j5vpf2fdmbvf2n4`
+  `bdata scraper run c_mt2j5vpf2fdmbvf2n4 https://shopalto.xyz/product/aurora-wireless-headphones --pretty`
+- `shopalto-drift` — `c_mt2khmw11zhlcl023j`
+  `bdata scraper run c_mt2khmw11zhlcl023j https://shopalto.xyz/product/mute-pro-earbuds --pretty`
+- `falkordb-docs` — `c_mt2jadm52izcmg18nb`
+  `bdata scraper run c_mt2jadm52izcmg18nb https://docs.falkordb.com/ --pretty`
+- `sqlite-changelog` — `c_mt2mhq4v6qfm4c54e`
+  `bdata scraper run c_mt2mhq4v6qfm4c54e https://www.sqlite.org/changes.html --pretty`
+
+Prefer the wrappers in this repo over raw CLI calls, because they snapshot and
+score the result instead of just printing it:
+
+```
+npm run sentinel:run   -- <id> [--url URL]
+npm run sentinel:heal  -- <id> --auto
+npm run sentinel:watch -- <id>          # run → detect → heal → re-run
+```
+
+Do not scrape login-walled, paywalled, government, or personal data.
+Prefer long-tail public sites over targets already covered by Bright Data's
+800+ pre-built scraper library.
