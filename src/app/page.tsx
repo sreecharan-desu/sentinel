@@ -322,7 +322,7 @@ export default function HomePage() {
                   setStepIndex(i);
                 }}
               />
-              <div className="scroll-area min-h-0 flex-1 px-4 py-4 sm:px-6 sm:py-5">
+              <div className="px-4 py-4 sm:px-6 sm:py-5 lg:scroll-area lg:min-h-0 lg:flex-1">
                 {step?.kind === "heal" ? (
                   <HealStep event={step.heal} />
                 ) : step ? (
