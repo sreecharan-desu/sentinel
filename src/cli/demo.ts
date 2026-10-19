@@ -41,7 +41,7 @@ async function main() {
   const second = await runCollector(getCollector("shopalto-pdp")!);
   console.log(second.rows[0] ?? second);
 
-  console.log("\n✅ Demo complete. Collector ID never changed:", second.collectorId);
+  console.log("\nDemo complete. Collector ID never changed:", second.collectorId);
 }
 
 main().catch((err) => {
