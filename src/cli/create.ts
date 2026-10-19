@@ -34,7 +34,7 @@ async function main() {
 
   const created = await createCollector(def);
   upsertCollector(created);
-  console.log(`\n✅ Collector ID: ${created.collectorId}`);
+  console.log(`\nCollector ID: ${created.collectorId}`);
   console.log("Pin this ID — heal keeps the SAME ID when the page changes.");
 }
 
