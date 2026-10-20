@@ -2,7 +2,7 @@
 
 scrapers rarely fail loudly. the run succeeds, the exit code is `0`, and the fields come back empty — so the breakage reaches your database before it reaches you.
 
-sentinel watches collectors built with [bright data scraper studio](https://brightdata.com/products/scraper-studio). when a run comes back thin, it writes a heal prompt from the specific fields that failed, heals the collector **in place**, and re-runs to confirm. the collector id never changes, so schedules, jobs, and apps keep calling the same `c_*`.
+sentinel watches collectors built with [bright data scraper studio](https://brightdata.com/products/web-scraper/studio). when a run comes back thin, it writes a heal prompt from the specific fields that failed, heals the collector **in place**, and re-runs to confirm. the collector id never changes, so schedules, jobs, and apps keep calling the same `c_*`.
 
 live dashboard: [sentinel-five-eosin.vercel.app](https://sentinel-five-eosin.vercel.app)
 
