@@ -29,7 +29,7 @@
     "@types/react": "^19.1.10",
     "@types/react-dom": "^19.1.7",
     "playwright": "^1.62.1",
-    "postcss": "^8.5.26",
+    "postcss": "8.5.26",
     "tailwindcss": "^4.3.3",
     "tsx": "^4.20.4",
     "typescript": "^5.9.2"
