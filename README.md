@@ -177,3 +177,7 @@ the snapshots as artifacts. both need `BRIGHTDATA_API_KEY` only for the latter.
 ## license
 
 mit
+
+---
+
+built by [sreecharan desu](https://www.sreecharandesu.in) · [more projects](https://www.sreecharandesu.in/work)
